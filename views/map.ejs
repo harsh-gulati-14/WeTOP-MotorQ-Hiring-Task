@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">WeTOP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/getclass">Course Page <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/studentinfo">Time Table</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/addclass">Add Class</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/map">Map</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<body>
+    <div id='map'></div>
+
+    <script>
+        
+        L.mapbox.accessToken = 'pk.eyJ1IjoiaGFyc2hndWxhdGkiLCJhIjoiY2tzd3J2azZjMGl3dzJ2cncydHBlcDczYyJ9.zX2bkOisiJNpStRYu5cvVg';
+        var map = L.map('map').setView([12.9711351, 79.1628825], 15);
+        var polygon = L.polygon([[12.9711351, 79.1628825]]).addTo(map);
+        var circle = L.circle([12.9711351, 79.1628825], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        circle.bindPopup("I am SJT.");
+        // Add tiles from the Mapbox Static Tiles API
+        // (https://docs.mapbox.com/api/maps/#static-tiles)
+        // Tiles are 512x512 pixels and are offset by 1 zoom level
+        L.tileLayer(
+            'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
+            tileSize: 512,
+            zoomOffset: -1,
+            attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+
+    </script>
+</body>
+
+</html>

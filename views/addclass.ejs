@@ -1,0 +1,32 @@
+<%- include('partials/header'); -%>
+<title>Login</title>
+</head>
+
+<body style="overflow: hidden;">
+    <div class="row" style="height:100vh;">
+        <div id="right-section" class="col">
+
+            <div id="login-area">
+                <h2>
+                    Add <small class="text-muted">Class</small>
+                </h2>
+                <form action="/addclass" method="POST">
+                    <input class="box" type="text" name="code" placeholder="Code">
+                    <input class="box" type="text" name="faculty" placeholder="Faculty">
+                    <input class="box" type="text" name="building" placeholder="Building">
+                    <input class="box" type="text" name="lat" placeholder="Latitude">
+                    <input class="box" type="text" name="long" placeholder="Longitude">
+                    <input class="box" type="text" name="time" placeholder="Time">
+                    <div id="buttons">
+                        <button type="submit" class="login-btn">Add</button>
+                        <br><a style="font-size: 0.9em;" href="/login">Already have an account yet? Sign in.</a>
+                    </div>
+                </form>
+            </div>
+            <div id="login-footer">
+                <i>Made with <font color="red">♥</font> by <a href="https://github.com/harsh-gulati-14">HARSH GULATI </a></i>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer'); -%>

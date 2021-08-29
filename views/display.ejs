@@ -1,0 +1,88 @@
+<%- include('partials/header'); -%>
+<title>Login</title>
+<style>
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: "Open Sans", sans-serif;
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+table tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+table th, table td {
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 2px solid #ddd;
+    display: block;
+    margin-bottom: 10px;
+  }
+  table td {
+    border-bottom: 1px dotted #ccc;
+    display: block;
+    font-size: 13px;
+    text-align: right;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+    </style>
+</head>
+<% if(details!=null) { %>
+    <table>
+        <table border="1"><tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Faculty</th>
+            <th>Time</th>
+            <th>Building</th>
+        </tr>
+        <% details.forEach(function(item){ %>
+            <tr>
+                <td>
+                    <%= item.rollno%>
+                </td>
+                <td>
+                    <%= item.name %>
+                </td>
+                <td>
+                    <%= item.faculty %>
+                </td>
+                <td>
+                    <%= item.time %>
+                </td>
+                <td>
+                  <a href="/map/<%= item.building %>"><%= item.building%></a>
+                </td>
+
+            </tr>
+            <% }) %>
+    </table>
+    <% } %>

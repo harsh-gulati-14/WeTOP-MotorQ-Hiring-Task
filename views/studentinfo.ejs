@@ -1,0 +1,23 @@
+<%- include('partials/header'); -%>
+<title>Login</title>
+</head>
+
+<body style="overflow: hidden;">
+    <div class="row" style="height:100vh;">
+        <div id="right-section" class="col">
+
+            <div id="login-area">
+                <h2>
+                    Reg <small class="text-muted">No.</small>
+                </h2>
+                <form action="/timetable" method="POST">
+                    <input class="box" type="text" name="rollno" placeholder="RegNo.">
+                    <div id="buttons">
+                        <button type="submit" class="login-btn">Signup</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer'); -%>

@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "612a3b4ec200fc4757a26040"
+  },
+  "code": "CSE1001",
+  "faculty": "Murali Sir",
+  "building": "SJT",
+  "time": "Monday 5-6Pm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "612a43e7b73c8abf06b2a0e5"
+  },
+  "code": "CSE1001",
+  "faculty": "Deepa Ma'am",
+  "building": "TT",
+  "time": "Tuesday 6-7 Pm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "612a7bb1532784198743ddd5"
+  },
+  "code": "CSE2003",
+  "faculty": "Mohan K Sir",
+  "building": "TT",
+  "time": "Monday 5-6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "612b3efc9dfedf2827398fbf"
+  },
+  "code": "cse2003",
+  "faculty": "Murali K Sir",
+  "building": "TT",
+  "lat": 12,
+  "long": 21,
+  "time": "wednesday 9-8 AM",
+  "__v": 0
+}]

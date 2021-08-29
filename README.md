@@ -20,6 +20,7 @@ $ npm init
 $ npm install
 $ node app.js
 # Open http://localhost:3000 on your browser
+# make sure to setup Mongo server at localhost:27017 for database
 ```
 
 
@@ -40,6 +41,8 @@ Details-> RegNo.
 /map => Map for the User for the provided destination
 Details-> Latitude and Longitude for the Building
 ```
+# 🎥: Demo Video
+### [Video](https://www.youtube.com/watch?v=5pFNmbID2fk)
 # :clap: Connect with Me
 
 ### Harsh Gulati 19BCT0210

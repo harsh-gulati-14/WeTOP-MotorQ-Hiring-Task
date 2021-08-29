@@ -34,6 +34,7 @@ $ npm install
 $ node app.js
 # Open http://localhost:3000 on your browser
 # make sure to setup Mongo server at localhost:27017 for database
+# add the sample data for classes with the classes.json file if you want else add manually
 ```
 
 

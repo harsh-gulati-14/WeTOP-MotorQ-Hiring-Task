@@ -8,9 +8,9 @@ const session = require("express-session");
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const port = process.env.PORT || 3000
-const studentrouter=require('../api - Copy/routers/student')
-const authrouter=require('../api - Copy/routers/auth')
-const classrouter=require('../api - Copy/routers/classes')
+const studentrouter=require('./routers/student')
+const authrouter=require('./routers/auth')
+const classrouter=require('./routers/classes')
 app.use(studentrouter)
 app.use(classrouter)
 app.use(authrouter)

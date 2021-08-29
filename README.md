@@ -14,16 +14,18 @@ A Student Management System for VIT student.
 :heavy_check_mark: Integarted with LeafLet Map service
 
 
-# :round_pushpin: Use Case Diagram
-![News Section](/img/thumbnail.JPG?raw=true "Home")
-# :round_pushpin: Data Flow Diagram
-![News Section](/img/course page.JPG?raw=true "Courses")
-# :round_pushpin: ERD Diagram
-![News Section](/img/erd.JPG?raw=true "ERD")
-# :round_pushpin: Architecture Diagram
-![News Section](/img/client.png?raw=true "Architecture")
-
-
+# :round_pushpin: Home
+![Home](/img/thumbnail.JPG?raw=true "Home")
+# :round_pushpin: Course Page
+![Course Page](/img/coursepage.JPG?raw=true "Courses")
+# :round_pushpin: Add a Class for Student
+![Add a Class for Student](/img/classmes.JPG?raw=true "Added")
+# :round_pushpin: Add a new Course
+![Add a new Course](/img/newclass.JPG?raw=true "New")
+# :round_pushpin: TimeTable
+![TimeTable](/img/timetable.JPG?raw=true "table")
+# :round_pushpin: Map with Building details
+![Map](/img/map.JPG?raw=true "map")
 # ✏️RUN THE PROJECT 
 ```sh
 > git clone <repo link>
